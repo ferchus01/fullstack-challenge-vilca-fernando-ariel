@@ -21,6 +21,7 @@ export const CharacterList = () => {
   return (
     <div>
       {isLoading && <p>Loading</p>}
+      <img src={urlImage} alt="image" />
       {charList.map((char) => (
         <CharacterItem key={char.id} {...char} setUrlImage={setUrlImage} />
       ))}
